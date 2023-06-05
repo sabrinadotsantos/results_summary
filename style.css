@@ -1,34 +1,37 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --cobalt: hsl(234, 85%, 45%);
-    --violet:hsla(256, 72%, 46%, 1);
-    --branco:hsl(0, 0%, 100%);
+    --violet: hsla(256, 72%, 46%, 1);
+    --branco: hsl(0, 0%, 100%);
+    --fonte: 
+
 }
 
-body{
+body {
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: center;
     margin: 100px;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 .azul {
-    background-color:#2e2be9;
+    background-color: #2e2be9;
     width: 300px;
     height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    border-radius: 30px;
 }
 
-.azul h2{
+.azul h2 {
     font-size: 25px;
     text-transform: initial;
     color: var(--branco);
@@ -37,7 +40,7 @@ body{
 
 }
 
-.circle{
+.circle {
     background-color: #7857ff;
     display: flex;
     align-items: center;
@@ -48,42 +51,148 @@ body{
     padding: 35px;
 }
 
-.circle span{
+.circle span {
     color: var(--branco);
     font-size: 50px;
 }
-.circle p{
-color: var(--branco);
-font-weight: 100;
+
+.circle p {
+    color: var(--branco);
+    font-weight: 100;
 }
 
-.azul > span{
-    color:var(--branco);
+.azul>span {
+    color: var(--branco);
     font-size: 15px;
     margin: 20px auto;
 }
 
-.azul > p{
+.azul>p {
     color: var(--branco);
     font-size: 13px;
     text-align: center;
 
 }
 
-.branco{
-    background-color: aquamarine;
-    margin-left: 1px;
-    border-radius: 30px;
-    width: 300px;
+.branco {
+    background-color:hsl(0, 0%, 100%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 0px 30px 30px 10px;
+    width: 350px;
     height: 400px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-decoration: none;
+    
+    
+
+}
+
+.branco h2 {
+    color: var(--branco);
+    text-transform: capitalize;
+    margin: 20px 0px 10px 15px;
+    color: black;
+
+}
+
+.branco ul {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.branco div {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+} 
+
+.branco li {
+    
+    text-align: center;
+    margin-left: 3px;
+    text-transform: capitalize;
+}
+
+.branco .numbers .num1{
+    margin-right: 5px;
+    color:black;
     
 }
 
-.branco div{
-    list-style: none;
-    display: flex;
+.branco .numbers .num2{
+    margin-right: 5px;
+    color:hsl(224, 30%, 27%)
+    
+}
+
+
+.branco .reaction, .branco .memory, .branco .verbal, .branco .visual{
+    background-color: rgb(252, 250, 247);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
+
+.branco .reaction li {
+    color: hsl(0, 100%, 67%);
+    font-weight: 700;
+    margin-left: 7px;
+}
+
+.branco .reaction .numbers {
+    margin-left: 150px;
+}
+
+
+
+
+.branco .memory li{
+    color:  hsl(39, 100%, 56%);
+    font-weight: 700;
+    margin-left: 7px;
+}
+
+.branco .memory .numbers {
+    margin-left: 149px;
+}
+
+
+
+
+.branco .verbal li{
+    color:   hsl(166, 100%, 37%);
+    font-weight: 700;
+    margin-left: 7px;
+}
+
+.branco .verbal .numbers {
+    margin-left: 162px;
+}
+
+.branco .visual li{
+    color:   hsl(234, 85%, 45%);
+    font-weight: 700;
+    margin-left: 7px;
+}
+
+.branco .visual .numbers {
+    margin-left: 164px;
+}
+
+.branco a{
+    background-color: #2a2a30;
+    text-decoration: none;
+    margin-left: 80px;
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    border-radius: 30px;
+    color: var(--branco);
+    text-transform: capitalize;
+    margin-top: 20px;
 }
