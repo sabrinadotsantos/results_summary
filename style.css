@@ -8,7 +8,7 @@
     --cobalt: hsl(234, 85%, 45%);
     --violet: hsla(256, 72%, 46%, 1);
     --branco: hsl(0, 0%, 100%);
-    --fonte: 
+    --fonte:
 
 }
 
@@ -23,8 +23,8 @@ body {
 
 .azul {
     background-color: #2e2be9;
-    width: 300px;
-    height: 400px;
+    width: 300px; 
+    height: 360px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,10 +32,12 @@ body {
 }
 
 .azul h2 {
-    font-size: 25px;
+    font-size: 20px;
     text-transform: initial;
-    color: var(--branco);
+    color:hsl(224, 30%, 78%);
     margin: 30px auto;
+    text-transform: capitalize;
+    font-weight: 100;
 
 
 }
@@ -54,37 +56,41 @@ body {
 .circle span {
     color: var(--branco);
     font-size: 50px;
+   
 }
 
 .circle p {
-    color: var(--branco);
+    color: hsl(224, 30%, 78%);
     font-weight: 100;
 }
 
 .azul>span {
     color: var(--branco);
-    font-size: 15px;
-    margin: 20px auto;
+    font-size: 25px;
+    font-weight: bolder;
+    margin: 20px auto 0px;
+    text-transform: capitalize;
 }
 
 .azul>p {
-    color: var(--branco);
+    width: 185px;
+    /* margin: 5px 50px; */
+    color: hsl(224, 30%, 78%);
     font-size: 13px;
     text-align: center;
+    text-transform: capitalize;
 
 }
 
 .branco {
-    background-color:hsl(0, 0%, 100%);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 3px 2px 1px rgba(0, 0, 0, 0.1);
     border-radius: 0px 30px 30px 10px;
-    width: 350px;
-    height: 400px;
+    width: 300px; 
+    height: 360px;
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    
-    
 
 }
 
@@ -96,98 +102,95 @@ body {
 
 }
 
-.branco ul {
-    display: flex;
-    flex-direction: column;
+.branco{
+    padding: 10px;
+}
 
+.branco li{
+    margin-left: 5px;
 }
 
 .branco div {
-    list-style: none;
     display: flex;
     align-items: center;
-    padding: 5px;
-    border-radius: 10px;
-} 
+   
 
-.branco li {
-    
-    text-align: center;
-    margin-left: 3px;
+    list-style: none;
+    padding: 0 3px;
+    border-radius: 10px;
     text-transform: capitalize;
-}
+    margin: 7px auto; 
 
-.branco .numbers .num1{
-    margin-right: 5px;
-    color:black;
-    
-}
-
-.branco .numbers .num2{
-    margin-right: 5px;
-    color:hsl(224, 30%, 27%)
-    
+    width: 250px;
 }
 
 
-.branco .reaction, .branco .memory, .branco .verbal, .branco .visual{
-    background-color: rgb(252, 250, 247);
-    border-radius: 10px;
-    margin: 10px;
+
+.branco .numbers .num1 {
+    margin-right: 3px;
+    color: black;
+    margin-left: 50px;
+}
+
+.branco .numbers .num2 {
+    color: hsl(224, 30%, 50%)
 }
 
 
+.branco .reaction {
+    background-color: hsl(0, 100%, 98%);
+    justify-content: space-around;
+}
 
 .branco .reaction li {
     color: hsl(0, 100%, 67%);
-    font-weight: 700;
-    margin-left: 7px;
-}
-
-.branco .reaction .numbers {
-    margin-left: 150px;
+    font-weight: 500;
+  
 }
 
 
+.branco .memory {
+    background-color: hsl(39, 100%, 98%);
+    justify-content: space-between;
 
-
-.branco .memory li{
-    color:  hsl(39, 100%, 56%);
-    font-weight: 700;
-    margin-left: 7px;
 }
 
-.branco .memory .numbers {
-    margin-left: 149px;
+.branco .memory li {
+
+    color: hsl(39, 100%, 56%);
+    font-weight: 500;
+ 
+
+}
+
+.branco .verbal {
+    background-color: hsl(166, 100%, 98%);
+    justify-content: space-between;
+}
+
+.branco .verbal li {
+    color: hsl(166, 100%, 37%);
+    font-weight: 500;
+
+
+}
+
+.branco .visual {
+    background-color: hsl(234, 85%, 98%);
+    justify-content: space-between;
+}
+
+.branco .visual li {
+    color: hsl(234, 85%, 45%);
+    font-weight: 500;
+  
 }
 
 
-
-
-.branco .verbal li{
-    color:   hsl(166, 100%, 37%);
-    font-weight: 700;
-    margin-left: 7px;
-}
-
-.branco .verbal .numbers {
-    margin-left: 162px;
-}
-
-.branco .visual li{
-    color:   hsl(234, 85%, 45%);
-    font-weight: 700;
-    margin-left: 7px;
-}
-
-.branco .visual .numbers {
-    margin-left: 164px;
-}
-
-.branco a{
+.branco a {
     background-color: #2a2a30;
     text-decoration: none;
-    margin-left: 80px;
+    margin-left: 40px;
     text-align: center;
     width: 200px;
     padding: 10px;
@@ -195,4 +198,20 @@ body {
     color: var(--branco);
     text-transform: capitalize;
     margin-top: 20px;
+    font-size: 13px;
 }
+
+
+
+
+/* Media Query para largura de tela de até 320px */
+
+@media screen and (max-width: 320px) {
+    body {
+        flex-wrap: wrap;
+    }
+    .azul{
+        padding: 0 43px;
+    }
+  }
+  
