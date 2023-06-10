@@ -207,11 +207,26 @@ body {
 /* Media Query para largura de tela de até 320px */
 
 @media screen and (max-width: 320px) {
+
+    *{
+        box-sizing: none;
+    
+    }
     body {
         flex-wrap: wrap;
+        margin: 0;
     }
     .azul{
         padding: 0 43px;
+        margin-top: -100px;
+        border-radius: none;
+    }
+    .branco{
+        box-shadow: none;
+    }
+
+    .branco a{
+        margin-left: 30px;
     }
   }
   
